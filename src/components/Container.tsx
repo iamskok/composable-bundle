@@ -14,5 +14,5 @@ export const Container = ({ children }: ContainerProps) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

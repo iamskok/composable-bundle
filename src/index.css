@@ -1,9 +1,8 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
-/* Primary colors */
 :root {
+  /* Primary colors */
   --color-primary-100: #E0E7FF;
   --color-primary-200: #B0BEFF;
   --color-primary-300: #7E8BFF;
@@ -11,10 +10,7 @@
   --color-primary-500: #1E40AF;
   --color-primary-600: #1D3DBF;
   --color-primary-700: #132D99;
-}
-
-/* Secondary colors */
-:root {
+  /* Secondary colors */
   --color-secondary-100: #D1FAE5;
   --color-secondary-200: #A7F3D0;
   --color-secondary-300: #6EE7B7;

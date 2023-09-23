@@ -7,4 +7,4 @@ export const ukConfig: BuildTimeConfig = {
   externalLibraries: ["react-confetti"],
   outDir: 'dist/uk',
   envFilePath: 'src/build-time-configs/uk.env',
-}
+};

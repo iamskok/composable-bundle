@@ -8,6 +8,8 @@ import { SecondaryButton } from './components/SecondaryButton';
 // #if VITE_QR_LOGIN=="true"
 import { useState } from 'react';
 import Confetti from 'react-confetti';
+// @TODO uncomment for theme run-time demo
+// import { fetchAndApplyTheme } from './run-time-configs/theme';
 // #endif
 
 const App = () => {
@@ -18,8 +20,11 @@ const App = () => {
     setTimeout(() => {
       setIsLogged(false);
     }, 5000);
-  }
+  };
   // #endif
+
+  // @TODO uncomment for theme run-time demo
+  // fetchAndApplyTheme();
 
   return (
     <>
@@ -42,7 +47,7 @@ const App = () => {
         </ButtonGroup>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

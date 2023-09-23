@@ -7,4 +7,4 @@ export const usConfig: BuildTimeConfig = {
   externalLibraries: [],
   outDir: 'dist/us',
   envFilePath: 'src/build-time-configs/us.env',
-}
+};

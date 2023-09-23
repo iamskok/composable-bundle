@@ -6,4 +6,4 @@ export const ButtonGroup = ({ children }: ButtonGroupProps) => (
   <div className="flex pt-6">
     {children}
   </div>
-)
+);

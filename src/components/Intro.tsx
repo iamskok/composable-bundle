@@ -10,5 +10,5 @@ export const Intro = () => {
         your business to new heights!
       </p>
     </div>
-  )
-}
+  );
+};
