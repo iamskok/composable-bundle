@@ -13,9 +13,10 @@
     "preview": "vite preview",
     "preview:uk": "vite preview --config vite.uk.ts",
     "preview:us": "vite preview --config vite.us.ts",
-    "update-theme": "ts-node-esm ./src/build-time-configs/theme.ts",
+    "update-theme": "ts-node-esm ./scripts/build-time-theme.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix"
+    "format": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "clean-vite-cache": "rm -rf node_modules/.vite"
   },
   "dependencies": {
     "dotenv": "^16.3.1",

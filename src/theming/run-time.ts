@@ -1,9 +1,9 @@
-import type { Theme } from "../types/theme";
+import type { TailwindTheme } from '../types/buildTimeConfig';
 
 /**
  * Theme object that we pretend to fetch from an API
  */
-export const theme: Theme = {
+export const theme: TailwindTheme = {
   colors: {
     primary: {
       100: '#EDE7F6',

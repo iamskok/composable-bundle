@@ -8,9 +8,10 @@ import { SecondaryButton } from './components/SecondaryButton';
 // #if VITE_QR_LOGIN=="true"
 import { useState } from 'react';
 import Confetti from 'react-confetti';
-// @TODO uncomment for theme run-time demo
-// import { fetchAndApplyTheme } from './run-time-configs/theme';
 // #endif
+
+// @TODO uncomment for theme run-time demo
+// import { fetchAndApplyTheme } from './theming/run-time';
 
 const App = () => {
   // #if VITE_QR_LOGIN=="true"
@@ -36,13 +37,9 @@ const App = () => {
         <Intro/>
         <Register/>
         <ButtonGroup>
-          <PrimaryButton>
-            Login
-          </PrimaryButton>
+          <PrimaryButton>Login</PrimaryButton>
           {/* #if VITE_QR_LOGIN=="true" */}
-          <SecondaryButton onClick={qrLoginHandler}>
-          Login with QR
-        </SecondaryButton>
+          <SecondaryButton onClick={qrLoginHandler}>Login with QR</SecondaryButton>
           {/* #endif */}
         </ButtonGroup>
       </Container>

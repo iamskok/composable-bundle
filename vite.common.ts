@@ -35,11 +35,22 @@ export const createViteConfig = (buildTimeConfig: BuildTimeConfig) => {
   sourceEnvFile(buildTimeConfig.envFilePath);
 
   return mergeConfig(commonViteConfig, defineConfig({
+    define: {
+      // Vite replaces text as is so we need to stringify the value,
+      // otherwise it may cause errors.
+      COUNTRY_CODE: JSON.stringify(buildTimeConfig.country),
+    },
     build: {
       outDir: buildTimeConfig.outDir,
       rollupOptions: {
         external: buildTimeConfig.externalLibraries,
       },
+    },
+    server: {
+      port: buildTimeConfig.devPort,
+    },
+    preview: {
+      port: buildTimeConfig.previewPort,
     },
   }));
 };

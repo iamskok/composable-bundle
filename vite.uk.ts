@@ -1,4 +1,6 @@
-import { createViteConfig } from "./vite.common";
-import { ukConfig } from "./src/build-time-configs/uk";
+import { createViteConfig } from './vite.common';
+import { ukConfig } from './src/configs/uk';
+import { updateCssTheme } from './src/theming/build-time';
 
+updateCssTheme(ukConfig.theme);
 export default createViteConfig(ukConfig);
